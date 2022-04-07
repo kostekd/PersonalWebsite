@@ -1,0 +1,33 @@
+.contact-info{
+    width: 30rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: papayawhip;
+    border: 0.5px solid white;
+    border-radius: 4px;
+    padding: 1.5rem;
+    animation: slide-left 1s ease-out forwards;
+}
+
+.contact-info > ul{
+    list-style: none;
+}
+
+img{
+    width: 6rem;
+    height: 5rem;
+}
+
+@keyframes slide-left {
+    from {
+      opacity: 0;
+      transform: translateX(+10rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
